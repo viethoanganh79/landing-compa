@@ -1,0 +1,245 @@
+---
+// Compa Landing Page - src/pages/index.astro
+---
+
+<html lang="vi" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Compa — CRM cá nhân cho Solopreneurs & Freelancers</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<style>
+			body { font-family: 'Plus Jakarta Sans', sans-serif; }
+		</style>
+	</head>
+	<body class="bg-[#FAF9F6] text-[#2D2A26] antialiased selection:bg-[#E07A5F] selection:text-white">
+
+		<!-- Navbar -->
+		<header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+			<div class="flex items-center gap-2.5">
+				<div class="w-10 h-10 rounded-2xl bg-[#E07A5F] flex items-center justify-center text-white font-bold text-2xl shadow-md shadow-[#E07A5F]/20">
+					C
+				</div>
+				<span class="text-2xl font-extrabold tracking-tight text-[#1A1816]">Compa</span>
+			</div>
+			<nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-[#6B655D]">
+				<a href="#features" class="hover:text-[#E07A5F] transition-colors">Tính năng</a>
+				<a href="#products" class="hover:text-[#E07A5F] transition-colors">Sản phẩm & Tái ký</a>
+				<a href="#sync" class="hover:text-[#E07A5F] transition-colors">Đồng bộ & E2EE</a>
+				<a href="#pricing" class="hover:text-[#E07A5F] transition-colors">Bảng giá</a>
+			</nav>
+			<div class="flex items-center gap-4">
+				<a href="/app" class="hidden sm:inline-block text-sm font-semibold text-[#2D2A26] hover:text-[#E07A5F]">Đăng nhập</a>
+				<a href="/app" class="bg-[#E07A5F] hover:bg-[#cc6a50] text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-md shadow-[#E07A5F]/20 transition-all">
+					Trải nghiệm ngay
+				</a>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="max-w-5xl mx-auto px-6 pt-16 pb-24 text-center">
+			<div class="inline-flex items-center gap-2 bg-[#F0ECE1] px-4 py-1.5 rounded-full text-xs font-bold text-[#8C5840] mb-6 shadow-sm">
+				<span class="w-2.5 h-2.5 rounded-full bg-[#E07A5F] animate-pulse"></span>
+				CRM cá nhân • Local-first • Bảo mật E2EE tuyệt đối
+			</div>
+			<h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.15] mb-6 text-[#1A1816]">
+				Vun đắp mối quan hệ, <br/><span class="text-[#E07A5F]">nhẹ nhàng</span> như trò chuyện.
+			</h1>
+			<p class="text-lg md:text-xl text-[#6B655D] max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+				Quản lý danh bạ thông minh, ghi lại mọi tương tác, theo dõi sản phẩm đã bán và tự động nhắc lịch tái ký — tất cả trong một ứng dụng cực kỳ tinh gọn.
+			</p>
+			<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+				<a href="/app" class="w-full sm:w-auto bg-[#E07A5F] hover:bg-[#cc6a50] text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-[#E07A5F]/25 transition-all text-base">
+					Dùng thử miễn phí ngay
+				</a>
+				<a href="#features" class="w-full sm:w-auto bg-white hover:bg-[#F0ECE1] text-[#2D2A26] font-bold px-8 py-4 rounded-2xl border border-[#E6E2D8] transition-all text-base shadow-sm">
+					Khám phá tính năng
+				</a>
+			</div>
+			<p class="text-xs text-[#8C847A] mt-4 font-medium">Không cần thẻ tín dụng • Hoạt động offline PWA • Cài đặt trên mọi thiết bị</p>
+
+			<!-- App Screenshot / Interactive Mockup Preview -->
+			<div class="mt-16 p-3 bg-white rounded-3xl shadow-2xl border border-[#E6E2D8]">
+				<div class="bg-[#FAF9F6] rounded-2xl p-6 md:p-10 text-left border border-[#F0ECE1] grid md:grid-cols-3 gap-6 items-center">
+					<div class="space-y-4 md:col-span-2">
+						<div class="inline-flex items-center gap-2 bg-[#E07A5F]/10 text-[#E07A5F] text-xs font-bold px-3 py-1 rounded-lg">
+							<span>🔥 Tổng quan Dashboard</span>
+						</div>
+						<h3 class="font-extrabold text-2xl text-[#1A1816]">Chào Việt Hoàng, hôm nay có 3 việc cần kết nối!</h3>
+						<p class="text-sm text-[#6B655D] leading-relaxed">
+							Hệ thống tự động nhắc nhở những khách hàng lâu ngày chưa liên lạc và các sản phẩm đến kỳ tái ký/bảo hành.
+						</p>
+						<div class="flex flex-wrap gap-2 pt-2">
+							<span class="bg-white px-3 py-1.5 rounded-xl border border-[#E6E2D8] text-xs font-semibold text-[#2D2A26]">👥 48 Contacts</span>
+							<span class="bg-white px-3 py-1.5 rounded-xl border border-[#E6E2D8] text-xs font-semibold text-[#2D2A26]">💬 120 Interactions</span>
+							<span class="bg-white px-3 py-1.5 rounded-xl border border-[#E6E2D8] text-xs font-semibold text-[#3B6D51]">📦 8 Sold Products</span>
+						</div>
+					</div>
+					<div class="w-full bg-white p-5 rounded-2xl border border-[#E6E2D8] shadow-sm text-xs space-y-3">
+						<div class="flex items-center justify-between font-bold text-[#1A1816]">
+							<span>☕️ Tương tác gần nhất</span>
+							<span class="text-[#E07A5F]">Tuyệt vời</span>
+						</div>
+						<p class="text-[#6B655D] leading-relaxed">"Gặp gỡ đối tác chiến lược tại quán cafe, thống nhất kế hoạch triển khai SaaS sync đa thiết bị."</p>
+						<div class="p-2.5 bg-[#FAF9F6] rounded-xl border border-[#F0ECE1] flex items-center justify-between">
+							<span class="font-semibold text-[#2D2A26]">Nhắc lịch hẹn tiếp theo:</span>
+							<span class="text-[#E07A5F] font-bold">Thứ Ba tới</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Core Features Grid -->
+		<section id="features" class="max-w-6xl mx-auto px-6 py-24 border-t border-[#E6E2D8]">
+			<div class="text-center max-w-2xl mx-auto mb-16">
+				<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-[#1A1816]">Được thiết kế toàn diện cho Solopreneur</h2>
+				<p class="text-[#6B655D] text-base">Không còn những bảng tính Excel rời rạc hay CRM cồng kềnh. Mọi thông tin quan trọng đều được tập trung tại một nơi.</p>
+			</div>
+			
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="bg-white p-8 rounded-3xl border border-[#E6E2D8] shadow-sm hover:shadow-md transition-shadow">
+					<div class="w-14 h-14 rounded-2xl bg-[#F0ECE1] flex items-center justify-center text-[#E07A5F] mb-6 text-2xl font-bold">📇</div>
+					<h3 class="font-bold text-xl mb-3 text-[#1A1816]">Danh bạ thông minh</h3>
+					<p class="text-sm text-[#6B655D] leading-relaxed">Lưu trữ thông tin chi tiết, phân nhóm, ghi chú sinh nhật, mạng xã hội và phân loại cấp độ quan hệ một cách khoa học.</p>
+				</div>
+				<div class="bg-white p-8 rounded-3xl border border-[#E6E2D8] shadow-sm hover:shadow-md transition-shadow">
+					<div class="w-14 h-14 rounded-2xl bg-[#F0ECE1] flex items-center justify-center text-[#E07A5F] mb-6 text-2xl font-bold">💬</div>
+					<h3 class="font-bold text-xl mb-3 text-[#1A1816]">Timeline & Cảm xúc</h3>
+					<p class="text-sm text-[#6B655D] leading-relaxed">Ghi lại từng cuộc gặp gỡ, cuộc gọi, bữa ăn kèm theo nhãn cảm xúc và lịch hẹn follow-up để không bao giờ bỏ lỡ khách hàng.</p>
+				</div>
+				<div class="bg-white p-8 rounded-3xl border border-[#E6E2D8] shadow-sm hover:shadow-md transition-shadow">
+					<div class="w-14 h-14 rounded-2xl bg-[#F0ECE1] flex items-center justify-center text-[#E07A5F] mb-6 text-2xl font-bold">📦</div>
+					<h3 class="font-bold text-xl mb-3 text-[#1A1816]">Sản phẩm & Tái ký</h3>
+					<p class="text-sm text-[#6B655D] leading-relaxed">Theo dõi các sản phẩm, dịch vụ đã bán kèm giá tiền và tự động nhắc lịch bảo hành, tái ký hoặc chăm sóc định kỳ cho khách.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Products & Revenue Section -->
+		<section id="products" class="max-w-6xl mx-auto px-6 py-20 border-t border-[#E6E2D8]">
+			<div class="bg-[#1A1816] text-white rounded-3xl p-8 md:p-14 grid md:grid-cols-2 gap-10 items-center shadow-2xl">
+				<div class="space-y-6">
+					<div class="inline-flex items-center gap-2 bg-[#E07A5F] text-white text-xs font-bold px-3.5 py-1.5 rounded-full">
+						💼 Quản lý doanh thu & dịch vụ bán ra
+					</div>
+					<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Kiểm soát sản phẩm đã bán và lịch tái ký dễ dàng</h2>
+					<p class="text-[#A39E93] text-base leading-relaxed">
+						Không chỉ dừng lại ở danh bạ, Compa giúp bạn theo dõi chính xác từng sản phẩm, khóa học, phần mềm hoặc dịch vụ đã cung cấp cho từng khách hàng. Tự động nhận cảnh báo khi đến hạn bảo hành hoặc tái ký.
+					</p>
+					<ul class="space-y-3 text-sm text-[#C4BEB3]">
+						<li class="flex items-center gap-3">✓ Thống kê doanh thu theo từng khách hàng / danh mục</li>
+						<li class="flex items-center gap-3">✓ Cảnh báo thông minh lịch tái ký (Renewal Due)</li>
+						<li class="flex items-center gap-3">✓ Quản lý trạng thái sản phẩm: Đang dùng, Hết hạn, Đã hủy</li>
+					</ul>
+				</div>
+				<div class="bg-[#2D2A26] p-6 rounded-2xl border border-[#443F38] shadow-inner space-y-4">
+					<div class="flex items-center justify-between text-xs text-[#A39E93]">
+						<span>📦 Quản lý sản phẩm đã bán</span>
+						<span class="text-[#E07A5F] font-bold">Renewal Due</span>
+					</div>
+					<div class="p-4 bg-[#1A1816] rounded-xl text-xs space-y-3 border border-[#443F38]">
+						<div class="flex justify-between items-center">
+							<span class="font-bold text-white text-sm">Gói SaaS Pro Sync</span>
+							<span class="bg-[#3B6D51]/30 text-[#4E9A6F] px-2.5 py-1 rounded-md font-semibold">Active</span>
+						</div>
+						<div class="text-[#A39E93] flex justify-between">
+							<span>Khách hàng: Việt Hoàng</span>
+							<span class="text-white font-semibold">1.490.000đ</span>
+						</div>
+						<div class="pt-2 border-t border-[#332F2B] flex justify-between items-center text-[#E07A5F]">
+							<span>⏰ Nhắc lịch tái ký:</span>
+							<span class="font-bold">15/11/2026</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sync & E2EE Section -->
+		<section id="sync" class="max-w-6xl mx-auto px-6 py-24 border-t border-[#E6E2D8]">
+			<div class="text-center max-w-2xl mx-auto mb-16">
+				<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-[#1A1816]">Đồng bộ đa thiết bị & Bảo mật tuyệt đối</h2>
+				<p class="text-[#6B655D] text-base">Hoạt động mượt mà ngoại tuyến (Local-first) và đồng bộ thời gian thực khi bạn cần.</p>
+			</div>
+
+			<div class="grid md:grid-cols-2 gap-8">
+				<div class="bg-white p-8 rounded-3xl border border-[#E6E2D8] shadow-sm space-y-4">
+					<div class="w-12 h-12 rounded-2xl bg-[#F0ECE1] flex items-center justify-center text-[#E07A5F] text-xl font-bold">🔒</div>
+					<h3 class="font-bold text-xl text-[#1A1816]">Mã hóa đầu cuối (E2EE)</h3>
+					<p class="text-sm text-[#6B655D] leading-relaxed">
+						Dữ liệu cá nhân của bạn được mã hóa an toàn trên thiết bị trước khi lưu trữ hoặc đồng bộ. Ngay cả máy chủ của chúng tôi cũng không thể đọc được nội dung danh bạ và deal của bạn.
+					</p>
+				</div>
+				<div class="bg-white p-8 rounded-3xl border border-[#E6E2D8] shadow-sm space-y-4">
+					<div class="w-12 h-12 rounded-2xl bg-[#F0ECE1] flex items-center justify-center text-[#E07A5F] text-xl font-bold">📱</div>
+					<h3 class="font-bold text-xl text-[#1A1816]">PWA & Đa thiết bị</h3>
+					<p class="text-sm text-[#6B655D] leading-relaxed">
+						Cài đặt trực tiếp lên màn hình chính điện thoại (iOS/Android) hoặc máy tính như một ứng dụng native. Hoạt động hoàn hảo ngay cả khi không có kết nối Internet.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section id="pricing" class="max-w-5xl mx-auto px-6 py-24 border-t border-[#E6E2D8]">
+			<div class="text-center max-w-2xl mx-auto mb-16">
+				<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-[#1A1816]">Biểu giá minh bạch, phù hợp mọi cá nhân</h2>
+				<p class="text-[#6B655D] text-base">Dùng miễn phí trên thiết bị cá nhân, nâng cấp khi bạn muốn đồng bộ mượt mà đa nền tảng.</p>
+			</div>
+
+			<div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+				<!-- Free Tier -->
+				<div class="bg-white p-8 rounded-3xl border border-[#E6E2D8] flex flex-col justify-between shadow-sm">
+					<div>
+						<h3 class="font-bold text-xl mb-2 text-[#1A1816]">Cá nhân (Free)</h3>
+						<p class="text-sm text-[#6B655D] mb-6">Trải nghiệm đầy đủ tính năng CRM cốt lõi.</p>
+						<div class="text-4xl font-extrabold mb-6 text-[#1A1816]">0đ <span class="text-sm font-normal text-[#6B655D]">/ vĩnh viễn</span></div>
+						<ul class="space-y-3.5 text-sm text-[#6B655D] mb-8">
+							<li class="flex items-center gap-2.5">✓ Không giới hạn Contact, Tương tác & Sản phẩm</li>
+							<li class="flex items-center gap-2.5">✓ Lưu trữ Local-first trên 1 thiết bị</li>
+							<li class="flex items-center gap-2.5">✓ Quản lý sản phẩm & Nhắc lịch tái ký</li>
+							<li class="flex items-center gap-2.5">✓ Xuất/Nhập dữ liệu dự phòng thủ công</li>
+						</ul>
+					</div>
+					<a href="/app" class="w-full text-center bg-[#FAF9F6] hover:bg-[#F0ECE1] text-[#2D2A26] font-bold py-3.5 rounded-2xl border border-[#E6E2D8] transition-all">
+						Bắt đầu miễn phí
+					</a>
+				</div>
+
+				<!-- Pro Tier -->
+				<div class="bg-[#1A1816] text-white p-8 rounded-3xl shadow-2xl flex flex-col justify-between relative overflow-hidden">
+					<div class="absolute top-0 right-0 bg-[#E07A5F] text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl">PHỔ BIẾN NHẤT</div>
+					<div>
+						<h3 class="font-bold text-xl mb-2 text-white">Pro Sync</h3>
+						<p class="text-sm text-[#A39E93] mb-6">Dành cho người dùng làm việc trên nhiều thiết bị.</p>
+						<div class="text-4xl font-extrabold mb-6 text-white">149.000đ <span class="text-sm font-normal text-[#A39E93]">/ tháng</span></div>
+						<p class="text-xs text-[#E07A5F] mb-6">Hoặc $7/tháng đối với thị trường quốc tế</p>
+						<ul class="space-y-3.5 text-sm text-[#C4BEB3] mb-8">
+							<li class="flex items-center gap-2.5">✓ Tất cả tính năng bản Free</li>
+							<li class="flex items-center gap-2.5">✓ Đồng bộ đa thiết bị thời gian thực</li>
+							<li class="flex items-center gap-2.5">✓ Mã hóa đầu cuối (E2EE) bảo mật tuyệt đối</li>
+							<li class="flex items-center gap-2.5">✓ Sao lưu tự động & Hỗ trợ ưu tiên</li>
+						</ul>
+					</div>
+					<a href="/app" class="w-full text-center bg-[#E07A5F] hover:bg-[#cc6a50] text-white font-bold py-3.5 rounded-2xl transition-all shadow-md shadow-[#E07A5F]/30">
+						Nâng cấp Pro ngay
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="max-w-6xl mx-auto px-6 py-12 border-t border-[#E6E2D8] flex flex-col md:flex-row items-center justify-between text-sm text-[#6B655D]">
+			<div class="flex items-center gap-2.5 mb-4 md:mb-0">
+				<div class="w-7 h-7 rounded-xl bg-[#E07A5F] flex items-center justify-center text-white font-bold text-xs">C</div>
+				<span class="font-bold text-[#1A1816]">Compa CRM</span>
+			</div>
+			<div>© 2026 Compa. All rights reserved. Made with warmth for Solopreneurs.</div>
+		</footer>
+
+	</body>
+</html>
