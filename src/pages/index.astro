@@ -18,10 +18,22 @@
 							gtag('js', new Date());
 							gtag('config', 'G-XXXXXXXXXX');
 						</script>
-		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-		<style>
-			body { font-family: 'Plus Jakarta Sans', sans-serif; }
-		</style>
+				<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+				<style>
+					body { font-family: 'Plus Jakarta Sans', sans-serif; }
+				</style>
+				<!-- GA event tracking -->
+				<script>
+					document.addEventListener('click', function(e) {
+						var target = e.target.closest('a[href*="compa.viett.net"]');
+						if (target) {
+							gtag('event', 'cta_click', {
+								event_category: 'engagement',
+								event_label: target.textContent.trim() || 'cta'
+							});
+						}
+					});
+				</script>
 	</head>
 	<body class="bg-[#FAF9F6] text-[#2D2A26] antialiased selection:bg-[#E07A5F] selection:text-white">
 
@@ -39,12 +51,11 @@
 				<a href="#sync" class="hover:text-[#E07A5F] transition-colors">Đồng bộ & E2EE</a>
 				<a href="#pricing" class="hover:text-[#E07A5F] transition-colors">Bảng giá</a>
 			</nav>
-			<div class="flex items-center gap-4">
-				<a href="https://compa.viett.net" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-block text-sm font-semibold text-[#2D2A26] hover:text-[#E07A5F]">Đăng nhập</a>
-				<a href="https://compa.viett.net" target="_blank" rel="noopener noreferrer" class="bg-[#E07A5F] hover:bg-[#cc6a50] text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-md shadow-[#E07A5F]/20 transition-all">
-					Trải nghiệm ngay
-				</a>
-			</div>
+						<div class="flex items-center gap-4">
+							<a href="https://compa.viett.net" target="_blank" rel="noopener noreferrer" class="bg-[#E07A5F] hover:bg-[#cc6a50] text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-md shadow-[#E07A5F]/20 transition-all">
+								Trải nghiệm ngay
+							</a>
+						</div>
 		</header>
 
 		<!-- Hero Section -->
