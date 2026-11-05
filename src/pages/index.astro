@@ -4,10 +4,15 @@
 
 <html lang="vi" class="scroll-smooth">
 	<head>
-		<meta charset="utf-8" />
+				<meta charset="utf-8" />
 				<link rel="icon" type="image/svg+xml" href="/logo.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Compa — CRM cá nhân cho Solopreneurs & Freelancers</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<title>Compa — CRM cá nhân cho Solopreneurs & Freelancers</title>
+				<meta name="description" content="Compa - CRM cá nhân local-first cho solopreneurs và freelancers. Quản lý mối quan hệ, nhắc nhở liên lạc, theo dõi sản phẩm sau bán. Bảo mật E2EE." />
+				<link rel="canonical" href="https://app-compa.viett.net/" />
+				<link rel="alternate" hreflang="vi" href="https://app-compa.viett.net/" />
+				<link rel="alternate" hreflang="en" href="https://app-compa.viett.net/en" />
+				<link rel="alternate" hreflang="x-default" href="https://app-compa.viett.net/" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 						<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 						<!-- Google Analytics -->
@@ -22,18 +27,27 @@
 				<style>
 					body { font-family: 'Plus Jakarta Sans', sans-serif; }
 				</style>
-				<!-- GA event tracking -->
-				<script>
-					document.addEventListener('click', function(e) {
-						var target = e.target.closest('a[href*="compa.viett.net"]');
-						if (target) {
-							gtag('event', 'cta_click', {
-								event_category: 'engagement',
-								event_label: target.textContent.trim() || 'cta'
-							});
-						}
-					});
-				</script>
+												<!-- Language detection -->
+												<script>
+													(function() {
+														var lang = navigator.language || navigator.userLanguage || '';
+														if (lang.toLowerCase().indexOf('vi') !== 0 && !window.location.pathname.startsWith('/en')) {
+															window.location.replace('/en');
+														}
+													})();
+												</script>
+												<!-- GA event tracking -->
+												<script>
+													document.addEventListener('click', function(e) {
+														var target = e.target.closest('a[href*="app-compa.viett.net"]');
+														if (target) {
+															gtag('event', 'cta_click', {
+																event_category: 'engagement',
+																event_label: target.textContent.trim() || 'cta'
+															});
+														}
+													});
+																</script>
 	</head>
 	<body class="bg-[#FAF9F6] text-[#2D2A26] antialiased selection:bg-[#E07A5F] selection:text-white">
 
